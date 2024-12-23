@@ -81,7 +81,7 @@ nav li:first-child {
 .side-bar a {
     width: 100%;
 }
-@media (max-width: 800px) {
+@media (max-width: 750px) {
     .hideOnMobile {
         display: none;
     }
@@ -89,13 +89,11 @@ nav li:first-child {
         display: block;
     }
 }
-
 @media (max-width: 400px) {
     .side-bar {
         padding: 10px 0;
     }
 }
-
 @media (min-width: 700px) {
     .open-icon {
         display: none;
@@ -204,4 +202,86 @@ h3 {
 }
 .content {
     align-self: center;
+}
+
+
+/* Styling from 740px to 899px */
+@media (min-width: 46.25rem) and (max-width: 56.18rem) {
+    .nav-links {
+        font-size: 1.3rem;
+    }
+    .image-header {
+        width: 47rem;
+    }
+    .first-heading {
+        font-size: 3.2rem;
+    }
+    p {
+        font-size: 1.3rem;
+    }
+    h2, .h2-footer {
+        font-size: 2.5rem;
+    }
+    h3, .h3-footer {
+        font-size: 2rem;
+    }
+    .aside {
+        padding: 1rem 2rem;
+    }
+}
+
+
+/* Styling from 900px and above */
+@media (min-width: 56.25rem) {
+    body {
+        padding: 2rem;
+    }
+    .main-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    /* heading container styling */
+    .image-header {
+        width: 55.5rem;
+        height: 32rem;
+    }
+    .heading-container {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Text styling */
+    .nav-links {
+        font-size: 1.3rem;
+    }
+    .first-heading {
+        font-size: 2.8rem;
+    }
+    p {
+        font-size: 1.3rem;
+    }
+    h2, .h2-footer {
+        font-size: 2.3rem;
+    }
+    h3, .h3-footer {
+        font-size: 2rem;
+    }
+
+    
+    /* Footer Styling */
+    .second-section {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        align-items: center;
+        padding: 1rem 1rem;
+    }
+    .laptop-image, .gaming-image, .retro-image {
+        width: 15rem;
+    }
 }
