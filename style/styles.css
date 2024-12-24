@@ -240,19 +240,25 @@ h3 {
         display: flex;
         flex-direction: row;
         align-items: center;
+        gap: 1rem;
     }
 
     /* heading container styling */
     .image-header {
-        width: 55.5rem;
-        height: 32rem;
+        width: 51rem;
+        min-height: 33rem;
     }
     .heading-container {
         display: flex;
         flex-direction: row;
-        gap: 1rem;
+        gap: 1.2rem;
         justify-content: center;
         align-items: center;
+        max-width: 51rem;
+    }
+    button:hover {
+        background-color: var(--VeryDarkBlue);
+        color: var(--OffWhite);
     }
 
     /* Text styling */
@@ -260,18 +266,23 @@ h3 {
         font-size: 1.3rem;
     }
     .first-heading {
-        font-size: 2.8rem;
+        font-size: 3.1rem;
     }
     p {
         font-size: 1.3rem;
     }
-    h2, .h2-footer {
+    h2 {
         font-size: 2.3rem;
     }
-    h3, .h3-footer {
+    h3 {
         font-size: 2rem;
     }
-
+    .aside {
+        padding: 2rem ;
+    }
+    .h3-aside:hover {
+        color: var(--SoftOrange);
+    }
     
     /* Footer Styling */
     .second-section {
@@ -282,6 +293,16 @@ h3 {
         padding: 1rem 1rem;
     }
     .laptop-image, .gaming-image, .retro-image {
-        width: 15rem;
+        width: 12rem;
+    }
+    .h2-footer {
+        margin: 1.5rem;
+        margin-bottom: 0;
+    }
+    .h3-footer {
+        margin-top: 1rem;
+    }
+    .h3-footer:hover {
+        color: var(--SoftRed);
     }
 }
