@@ -259,6 +259,7 @@ h3 {
     button:hover {
         background-color: var(--VeryDarkBlue);
         color: var(--OffWhite);
+        cursor: pointer;
     }
 
     /* Text styling */
@@ -282,6 +283,7 @@ h3 {
     }
     .h3-aside:hover {
         color: var(--SoftOrange);
+        cursor: pointer;
     }
     
     /* Footer Styling */
@@ -304,5 +306,6 @@ h3 {
     }
     .h3-footer:hover {
         color: var(--SoftRed);
+        cursor: pointer;
     }
 }
