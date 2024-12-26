@@ -14,82 +14,58 @@
 </head>
 <body>
   <header>
-    <nav class="nav-bar">
-      <ul class="side-bar">
-        <li class="some-icon">
-          <a href="#">
-            <img 
-              src="./assets/images/icon-menu-close.svg" 
-              alt=""
-              class="close-icon"
-            >
-          </a>
-        </li>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#new">New</a></li>
-        <li><a href="#popular">Popular</a></li>
-        <li><a href="#trending">Trending</a></li>
-        <li><a href="#categories">Categories</a></li>
-      </ul>
+    <div class="logo-container">
+      <img 
+        src="./assets/images/logo.svg" 
+        alt="logo"
+        class="logo"
+      >
+    </div>
+
+    <nav>
+      <img src="./assets/images/icon-menu.svg" alt="" class="hamburger-icon">
 
       <ul class="nav-links">
-        <li>
-          <a href="#">
-            <img
-              src="./assets/images/logo.svg"
-              alt="logo"
-              class="logo"
-            />
-          </a>
-        </li>
-        <li class="hideOnMobile"><a href="#home">Home</a></li>
-        <li class="hideOnMobile"><a href="#new">New</a></li>
-        <li class="hideOnMobile"><a href="#popular">Popular</a></li>
-        <li class="hideOnMobile"><a href="#trending">Trending</a></li>
-        <li class="hideOnMobile"><a href="#categories">Categories</a></li>
-        <li id="hamburger-icon">
-          <a href="#">
-            <img 
-              src="./assets/images/icon-menu.svg" 
-              alt="menu icon"
-              class="open-icon"
-            >
-          </a>
-        </li>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="#details">New</a></li>
+        <li><a href="#">Popular</a></li>
+        <li><a href="#">Trending</a></li>
+        <li><a href="#">Categories</a></li>
       </ul>
     </nav>
   </header>
-    
-  <section class="main-section">
-    <section class="midsection">
-      <div class="image-container">
-        <img 
-          src="./assets/images/image-web-3-mobile.jpg" 
-          alt=""
-          class="image-header"
-          max-inline-size="100%"
-          srcset="./assets/images/image-web-3-mobile.jpg 300w, ./assets/images/image-web-3-desktop.jpg 700w"
-          sizes="(max-width: 699px) 140px, (max-width: 1024px) 400px, 650px"
-        >
+
+  <main>
+    <!-- Hero Image-->
+    <picture class="hero-image">
+      <source
+        srcset="./assets/images/image-web-3-desktop.jpg"
+        media="(min-width: 900px)"
+      >
+      <img 
+        src="./assets/images/image-web-3-mobile.jpg" 
+        alt="hero image"
+        class="hero-picture"
+      >
+    </picture>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="h1-container">
+        <h1 class="h1-heading">The Bright Future of Web 3.0?</h1>
       </div>
 
-      <div class="heading-container">
-        <section class="h-section">
-          <h1 class="first-heading">The Bright Future of Web 3.0?</h1>
-        </section>
-
-        <section class="p-section">
-          <p class="first-paragraph">
-            We dive into the next evolution of the web that claims to
-            put the power of the platforms back into the hands of 
-            the people. But is it really fulfilling its promise?
-          </p>
-          <button class="button">Read More</button>
-        </section>
+      <div class="p-container">
+        <p class="p-heading">
+          We dive into the next evolution of the web that claims 
+          to put the power of the platforms back into the hands of the people. 
+          But is it really fulfilling its promise?
+        </p>
+        <button class="button">Read more</button>
       </div>
     </section>
 
-    <section class="aside">
+    <aside class="aside" id="details">
       <h2 class="h2-aside">New</h2>
 
       <h3 class="h3-aside">Hydrogen VS Electric Cars</h3>
@@ -108,55 +84,59 @@
         Private funding by VC firms is down 50% YOY. 
         We take a look at what that means.
       </p>
-    </section>
-  </section>
+    </aside> 
 
-  <footer class="second-section">
-    <section class="footer-card">
-      <div class="image-content">
-        <img 
-          src="./assets/images/image-retro-pcs.jpg" 
-          alt=" retro pcs"
-          class="retro-image"
-        >
-      </div>
-      <div class="content">
-        <h2 class="h2-footer">01</h2>
-        <h3 class="h3-footer">Reviving Retro PCs</h3>
-        <p>What happens when old PCs are given modern upgrades?</p>
-      </div>
-    </section>
+    <section class="footer">
+      <div class="footer-card">
+        <section class="footer-image">
+          <img 
+            src="./assets/images/image-retro-pcs.jpg" 
+            alt="retro pc image"
+            class="retro-image"
+          >
+        </section>
 
-    <section class="footer-card">
-      <div class="image-content">
-        <img 
-          src="./assets/images/image-top-laptops.jpg" 
-          alt="top laptops"
-          class="laptop-image"
-        >
+        <section class="footer-text">
+          <h2 class="h2-footer">01</h2>
+          <h3 class="h3-footer">Reviving Retro PCs</h3>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </section>
       </div>
-      <div class="content">
-        <h2 class="h2-footer">02</h2>
-        <h3 class="h3-footer">Top 10 Laptops of 2022</h3>
-        <p>Our best picks for various needs and budgets.</p>
-      </div>
-    </section>
 
-    <section class="footer-card">
-      <div class="image-content">
-        <img 
-          src="./assets/images/image-gaming-growth.jpg" 
-          alt="gaming growth"
-          class="gaming-image" 
-        >
+      <div class="footer-card">
+        <section class="footer-image">
+          <img 
+            src="./assets/images/image-top-laptops.jpg" 
+            alt="laptop image"
+            class="laptop-image"
+          >
+        </section>
+
+        <section class="footer-text">
+          <h2 class="h2-footer">02</h2>
+          <h3 class="h3-footer">Top 10 Laptops of 2022</h3>
+          <p>Our best picks for various needs and budgets.</p>
+        </section>
       </div>
-      <div class="content">
-        <h2 class="h2-footer">03</h2>
-        <h3 class="h3-footer">The Growth of Gaming</h3>
-        <p>How the pandemic has sparked fresh opportunities.</p>
+
+      <div class="footer-card">
+        <section class="footer-image">
+          <img 
+            src="./assets/images/image-gaming-growth.jpg" 
+            alt="gaming image"
+            class="gaming-image"
+          >
+        </section>
+
+        <section class="footer-text">
+          <h2 class="h2-footer">03</h2>
+          <h3 class="h3-footer">The Growth of Gaming</h3>
+          <p>How the pandemic has sparked fresh opportunities.</p>
+        </section>
       </div>
     </section>
-  </footer>
+  </main>
   <script src="./index.js"></script>
+</body>
 </body>
 </html>

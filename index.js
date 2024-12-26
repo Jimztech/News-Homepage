@@ -1,11 +1,12 @@
-const sideBar = document.querySelector(".side-bar");
-const openMenu = document.querySelector(".open-icon");
-const closeMenu = document.querySelector(".close-icon");
+const sideBar = document.querySelector(".nav-links");
+const openMenu = document.querySelector(".hamburger-icon");
 
 openMenu.addEventListener("click", () => {
-    sideBar.style.display = "flex";
-});
-
-closeMenu.addEventListener("click", () => {
-    sideBar.style.display = "none";
+    if(sideBar.style.display === "flex") {
+        sideBar.style.display = "none";
+        openMenu.src = "/assets/images/icon-menu.svg"
+    } else {
+        sideBar.style.display = "flex";
+        openMenu.src = "/assets/images/icon-menu-close.svg";
+    }
 });
